@@ -10,6 +10,7 @@
 - Uji coba Laragon MySQL berjalan pada Port 3306.
 - Konfigurasi identitas Git global.
 
+---
 ### Spesifikasi Perangkat 
 Device name	DESKTOP-Q9ECRSL
 Processor	13th Gen Intel(R) Core(TM) i7-13700 (2.10 GHz)
