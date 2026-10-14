@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2 - Form Kontak Ina Amelia</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulir Kontak Ina Amelia</h1>
+        <nav>
+            <a href="portofolio.html">Halaman Portofolio</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Kirimkan Pesan kepada Saya</h2>
+
+            <form>
+
+                <p>
+                    <label for="nama_pengirim">
+                        Nama Lengkap Anda:
+                    </label><br>
+                    <input type="text"
+                           id="nama_pengirim"
+                           name="nama_pengirim"
+                           required>
+                </p>
+
+                <p>
+                    <label for="email_pengirim">
+                        Alamat Email:
+                    </label><br>
+                    <input type="email"
+                           id="email_pengirim"
+                           name="email_pengirim"
+                           required>
+                </p>
+
+                <p>
+                    <label for="jenis_pesan">
+                        Jenis Pesan:
+                    </label><br>
+                    <select id="jenis_pesan" name="jenis_pesan" required>
+                        <option value="">-- Pilih jenis pesan --</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="kerja_sama">Kerja Sama</option>
+                        <option value="saran">Saran</option>
+                        <option value="lainnya">Lain-lain</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pesan">
+                        Pesan:
+                    </label><br>
+                    <textarea id="pesan"
+                              name="pesan"
+                              rows="6"
+                              cols="50"
+                              required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Kirim Pesan</button>
+                    <button type="reset">Batal / Reset</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Ina Amelia</p>
+        <p>Teknik Informatika - Institut Teknologi Garut</p>
+    </footer>
+
+</body>
+</html>
