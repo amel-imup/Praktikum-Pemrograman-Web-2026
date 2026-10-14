@@ -1,17 +1,18 @@
-/* =========================
-   RESET
-========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #6ff43a;
-    color: #344238;
+    background-color: #fff7f0;
+    color: #51483f;
     line-height: 1.8;
 }
 
@@ -19,55 +20,58 @@ body {
    HEADER
 ========================= */
 body > header {
-    background: linear-gradient(135deg, #dcebd8, #edf5e9);
-    padding: 40px 20px 25px;
+    background: linear-gradient(135deg, #f8dce0, #e6efd8, #fff0e9);
+    padding: 35px 20px 25px;
     text-align: center;
-    border-bottom: 1px solid #e3d1d9;
+    border-bottom: 1px solid #ead9d0;
 }
 
-header h1 {
-    color: #355640;
+body > header h1 {
+    color: #526344;
     font-size: 32px;
     margin-bottom: 5px;
-    letter-spacing: 0.5px;
 }
 
-header > p {
-    color: #718472;
+body > header > p {
+    color: #a9576a;
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 /* =========================
-   NAVIGATION
+   NAVIGASI
 ========================= */
 nav {
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     list-style: none;
 }
 
 nav a {
     display: inline-block;
-    color: #355640;
+    color: #526344;
+    background-color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    padding: 8px 17px;
+    border: 1px solid #dce5d0;
+    border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
-    padding: 8px 15px;
-    border-radius: 20px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #355640;
+    background-color: #e98b9b;
     color: white;
+    border-color: #e98b9b;
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -93,32 +97,31 @@ section {
     background-color: #ffffff;
     padding: 30px;
     margin-bottom: 25px;
-    border: 1px solid #e3ebe0;
-    border-radius: 16px;
-    box-shadow: 0 5px 18px rgba(53, 86, 64, 0.06);
+    border: 1px solid #f0e4dc;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(128, 91, 77, 0.07);
     scroll-margin-top: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s;
 }
 
 section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(53, 86, 64, 0.10);
+    box-shadow: 0 8px 24px rgba(169, 87, 106, 0.12);
 }
 
 /* =========================
    JUDUL
 ========================= */
 h2 {
-    color: #355640;
-    font-size: 23px;
+    color: #a9576a;
+    font-size: 24px;
     margin-bottom: 18px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #dcebd8;
+    border-bottom: 2px solid #dce8cc;
 }
 
 h3 {
-    color: #4c7155;
-    font-size: 18px;
+    color: #526344;
+    font-size: 19px;
     margin-bottom: 8px;
 }
 
@@ -126,18 +129,18 @@ h3 {
    TENTANG SAYA
 ========================= */
 #tentang p {
+    color: #62584f;
     text-align: justify;
-    color: #59675b;
 }
 
 /* =========================
    INFORMASI PRIBADI
 ========================= */
 #informasi p {
-    padding: 10px 14px;
-    margin-bottom: 8px;
-    background-color: #f4f8f1;
-    border-left: 4px solid #8eae88;
+    background-color: #f5f8ee;
+    border-left: 4px solid #a8bd83;
+    padding: 10px 15px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -149,39 +152,45 @@ h3 {
    PENDIDIKAN
 ========================= */
 #pendidikan article {
+    background-color: #f5f8ee;
     padding: 20px;
-    background-color: #f4f8f1;
+    border-left: 5px solid #a8bd83;
     border-radius: 10px;
-    border-left: 4px solid #719b72;
 }
 
 #pendidikan article p {
-    color: #647367;
+    color: #62584f;
+}
+
+time {
+    color: #a9576a;
+    font-weight: bold;
 }
 
 /* =========================
    HOBI
 ========================= */
 #hobi ul {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
+    list-style: none;
 }
 
 #hobi li {
-    background-color: #e6f0e2;
-    color: #355640;
-    padding: 9px 16px;
+    background-color: #f9e1e5;
+    color: #914e5e;
+    padding: 8px 15px;
+    border: 1px solid #f2cbd3;
     border-radius: 20px;
     font-size: 14px;
-    font-weight: 500;
     transition: 0.3s;
 }
 
 #hobi li:hover {
-    background-color: #355640;
-    color: white;
+    background-color: #a8bd83;
+    color: #35432b;
+    border-color: #a8bd83;
     transform: translateY(-2px);
 }
 
@@ -189,12 +198,12 @@ h3 {
    KONTAK
 ========================= */
 #kontak p {
+    color: #62584f;
     margin-bottom: 10px;
-    color: #59675b;
 }
 
 #kontak a {
-    color: #477a50;
+    color: #b45369;
     font-weight: bold;
     text-decoration: none;
     overflow-wrap: anywhere;
@@ -202,29 +211,31 @@ h3 {
 }
 
 #kontak a:hover {
-    color: #263f2d;
+    color: #526344;
     text-decoration: underline;
 }
 
 /* =========================
-   ASIDE - STATUS PEKERJAAN
+   STATUS PEKERJAAN
 ========================= */
 aside {
     max-width: 860px;
     margin: 30px auto;
     padding: 25px 30px;
-    background-color: #e4efdf;
-    border-left: 5px solid #719b72;
-    border-radius: 10px;
+    background: linear-gradient(120deg, #e8efd9, #f9e2e5);
+    border-left: 5px solid #e98b9b;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(128, 91, 77, 0.05);
 }
 
 aside h3 {
-    color: #355640;
+    color: #526344;
+    font-size: 20px;
     margin-bottom: 8px;
 }
 
 aside p {
-    color: #59675b;
+    color: #62584f;
 }
 
 /* =========================
@@ -234,44 +245,49 @@ footer {
     margin-top: 40px;
     padding: 25px 20px;
     text-align: center;
-    background-color: #355640;
-    color: #edf5e9;
+    background-color: #526344;
+    color: #fff7f0;
     font-size: 14px;
+    border-top: 4px solid #e98b9b;
+}
+
+footer p {
+    margin: 3px 0;
 }
 
 /* =========================
-   RESPONSIVE - TABLET & HP
+   RESPONSIVE TABLET DAN HP
 ========================= */
 @media (max-width: 700px) {
     body > header {
-        padding: 30px 15px 20px;
+        padding: 28px 15px 22px;
     }
 
-    header h1 {
+    body > header h1 {
         font-size: 25px;
     }
 
-    header > p {
+    body > header > p {
         font-size: 14px;
     }
 
     nav ul {
-        gap: 5px;
+        gap: 7px;
     }
 
     nav a {
-        padding: 7px 11px;
+        padding: 8px 12px;
         font-size: 13px;
     }
 
     main {
-        margin: 20px auto;
+        margin: 22px auto;
         padding: 0 14px;
     }
 
     section {
         padding: 22px 18px;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -287,7 +303,7 @@ footer {
     }
 
     #hobi li {
-        padding: 8px 12px;
+        padding: 7px 12px;
         font-size: 13px;
     }
 
@@ -297,23 +313,27 @@ footer {
     }
 
     footer {
-        margin-top: 30px;
+        margin-top: 25px;
         padding: 20px 12px;
     }
 }
 
 /* =========================
-   RESPONSIVE - HP KECIL
+   HP KECIL
 ========================= */
 @media (max-width: 400px) {
-    header h1 {
+    body > header h1 {
         font-size: 22px;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 3px;
+        gap: 5px;
+    }
+
+    nav a {
+        min-width: 170px;
     }
 
     section {

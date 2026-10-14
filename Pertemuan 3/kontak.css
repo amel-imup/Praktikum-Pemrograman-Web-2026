@@ -1,87 +1,181 @@
-/* Reset */
+
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
- font-family: 'Times New Roman', Times, serif
- background-color: #9cff6b;
- color: #333;
- line-height: 1.6;
-}
-/* Header */
-body > header {
- background-color: rgb(245, 124, 124);
- padding: 20px;
- border-bottom: 5px solid #38f875;
-}
-body > header h1 {
- max-width: 900px;
- margin: auto;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7f0;
+    color: #4b5142;
+    line-height: 1.7;
 }
 
-/* Navigation */
-nav {
- max-width: 900px;
- margin: auto;
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #f8dce0, #e6efd8);
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 4px solid #e98b9b;
 }
 
-nav ul {
- display: flex;
- gap: 20px;
- list-style: none;
+header h1 {
+    margin: 0;
+    color: #a9576a;
+    font-size: 30px;
 }
-nav a {
- color: #333;
- text-decoration: none;
+
+/* ===== GARIS PEMISAH ===== */
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d8e3c5;
+    margin: 0;
 }
-nav a:hover {
- color: hsl(216, 98%, 52%);
+
+/* ===== KONTEN UTAMA ===== */
+
+main {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
-/* Form */
-form {
- margin-top: 20px;
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e6efd8;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(82, 99, 68, 0.10);
 }
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #a9576a;
+    font-size: 23px;
+}
+
+/* ===== FORMULIR ===== */
+
 form p {
- margin-bottom: 15px;
+    margin-bottom: 22px;
 }
+
 label {
- display: inline-block;
- margin-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #526344;
+    font-weight: bold;
 }
-input[type="text"],
-input[type="email"],
+
+input,
 select,
 textarea {
- width: 100%;
- padding: 9px;
- border: 1px solid #ccc;
- font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #4b5142;
+    background-color: #fffaf7;
+    border: 1px solid #cbd8b5;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #ffffff;
+    border-color: #e98b9b;
+    box-shadow: 0 0 0 3px rgba(233, 139, 155, 0.18);
+}
+
 textarea {
- resize: vertical;
+    min-height: 140px;
+    resize: vertical;
 }
+
+/* ===== TOMBOL ===== */
+
 button {
- padding: 9px 15px;
- border: none;
- background-color: #fa6ec2;
- color: rgb(12, 9, 10);
- cursor: pointer;
+    padding: 11px 20px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+button[type="submit"] {
+    background-color: #e98b9b;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #cf7184;
+    transform: translateY(-2px);
+}
+
 button[type="reset"] {
- background-color: #fa6ec2;
+    background-color: #e6efd8;
+    color: #526344;
 }
-button:hover {
- opacity: 0.8;
+
+button[type="reset"]:hover {
+    background-color: #cbd8b5;
+    transform: translateY(-2px);
 }
-/* Main */
-main {
- max-width: 900px;
- margin: 30px auto;
- padding: 0 20px;
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #526344;
+    color: #fff7f0;
+    border-top: 4px solid #e98b9b;
 }
-section {
- background-color: rgb(114, 231, 56);
- padding: 25px;
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ===== TAMPILAN HP ===== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 20px 16px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
 }

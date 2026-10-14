@@ -1,146 +1,308 @@
-/* Reset */
+
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
- font-family: Arial, sans-serif;
- background-color: #f3fbf4;
- color: #333;
- line-height: 1.6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff7f0;
+    color: #51483f;
+    line-height: 1.8;
 }
-/* Header */
+
+/* =========================
+   HEADER UTAMA
+========================= */
 body > header {
- background-color: white;
- padding: 20px;
- border-bottom: 1px solid #ddd;
+    background: linear-gradient(135deg, #f8dce0, #e6efd8, #fff0e9);
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ead9d0;
 }
+
 body > header h1 {
- max-width: 900px;
- margin: auto;
+    color: #526344;
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
-/* Navigation */
+
+/* =========================
+   NAVIGASI
+========================= */
 nav {
- max-width: 900px;
- margin: auto;
+    max-width: 900px;
+    margin: auto;
 }
 
 nav ul {
- display: flex;
- gap: 20px;
- list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
 }
+
 nav a {
- color: #333;
- text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #526344;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 9px 20px;
+    border: 1px solid #dce5d0;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
 }
+
 nav a:hover {
- color: #0d6efd;
+    background-color: #e98b9b;
+    color: white;
+    border-color: #e98b9b;
+    transform: translateY(-2px);
 }
-/* Main */
-main {
- max-width: 900px;
- margin: 30px auto;
- padding: 0 20px;
-}
-section {
- background-color: white;
- padding: 25px;
-}
-/* Gambar */
-main img {
- display: block;
- max-width: 100%;
- height: auto;
- margin: 0;
-}
-/* Judul */
-h2 {
- margin-bottom: 15px;
-}
-h3 {
- margin-bottom: 5px;
-}
-/* Project */
-#project {
- margin-top: 30px;
-}
-article {
- padding: 15px 0;
- border-bottom: 1px solid #ddd;
-}
-article:last-child {
- border-bottom: none;
-}
-/* Form */
-form {
- margin-top: 20px;
-}
-form p {
- margin-bottom: 15px;
-}
-label {
- display: inline-block;
- margin-bottom: 5px;
-}
-input[type="text"],
-input[type="email"],
-select,
-textarea {
- width: 100%;
- padding: 9px;
- border: 1px solid #ccc;
- font-family: Arial, sans-serif;
-}
-textarea {
- resize: vertical;
-}
-button {
- padding: 9px 15px;
- border: none;
- background-color: #333;
- color: white;
- cursor: pointer;
-}
-button[type="reset"] {
- background-color: #888;
-}
-button:hover {
- opacity: 0.8;
-}
-/* Aside */
-aside {
- max-width: 900px;
- margin: 30px auto;
- padding: 20px;
- background-color: white;
- border-left: 3px solid #0d6efd;
-}
-/* Footer */
-footer {
- padding: 20px;
- text-align: center;
- color: #777;
- font-size: 14px;
-}
-/* Garis <hr> */
+
+/* =========================
+   GARIS PEMBATAS
+========================= */
 hr {
- display: none;
+    display: none;
 }
-/* Tampilan HP */
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   SECTION
+========================= */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #f0e4dc;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(128, 91, 77, 0.07);
+    transition: 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 8px 24px rgba(169, 87, 106, 0.12);
+}
+
+/* =========================
+   JUDUL
+========================= */
+h2 {
+    color: #a9576a;
+    font-size: 25px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dce8cc;
+}
+
+h3 {
+    color: #526344;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   TENTANG SAYA
+========================= */
+#tentang p {
+    color: #62584f;
+    text-align: justify;
+}
+
+/* =========================
+   PROYEK UNGGULAN
+========================= */
+#proyek article {
+    padding: 22px;
+    margin-top: 20px;
+    background-color: #f5f8ee;
+    border: 1px solid #e4e9d8;
+    border-left: 5px solid #a8bd83;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#proyek article:hover {
+    background-color: #fff3f3;
+    border-left-color: #e98b9b;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(169, 87, 106, 0.09);
+}
+
+/* Header di dalam setiap proyek */
+#proyek article header {
+    background: none;
+    padding: 0;
+    text-align: left;
+    border: none;
+    margin-bottom: 12px;
+}
+
+#proyek article h3 {
+    color: #526344;
+    font-size: 18px;
+}
+
+#proyek article header p {
+    color: #a9576a;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#proyek article > p {
+    color: #62584f;
+    font-size: 15px;
+}
+
+/* Tahun proyek */
+time {
+    color: #718c51;
+    font-weight: bold;
+}
+
+/* =========================
+   STATUS PEKERJAAN
+========================= */
+aside {
+    max-width: 860px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    background: linear-gradient(120deg, #e8efd9, #f9e2e5);
+    border-left: 5px solid #e98b9b;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(128, 91, 77, 0.05);
+}
+
+aside h3 {
+    color: #526344;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+aside p {
+    color: #62584f;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #526344;
+    color: #fff7f0;
+    font-size: 14px;
+    border-top: 4px solid #e98b9b;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* =========================
+   RESPONSIVE TABLET DAN HP
+========================= */
 @media (max-width: 700px) {
- nav ul {
- flex-direction: column;
- gap: 8px;
- }
- main {
- margin-top: 20px;
- }
- main img {
- margin: 0 auto;
- }
- section {
- padding: 20px;
- }
+    body > header {
+        padding: 28px 15px;
+    }
+
+    body > header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    main {
+        margin: 22px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 22px 18px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #tentang p {
+        text-align: left;
+    }
+
+    #proyek article {
+        padding: 18px;
+    }
+
+    #proyek article h3 {
+        font-size: 17px;
+    }
+
+    aside {
+        margin: 20px 14px;
+        padding: 20px;
+    }
+
+    footer {
+        margin-top: 25px;
+        padding: 20px 12px;
+    }
+}
+
+/* =========================
+   HP KECIL
+========================= */
+@media (max-width: 400px) {
+    body > header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav a {
+        min-width: 150px;
+    }
+
+    section {
+        padding: 18px 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #proyek article {
+        padding: 15px;
+    }
 }

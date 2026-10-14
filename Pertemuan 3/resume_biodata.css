@@ -1,0 +1,195 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7f0;
+    color: #4b5142;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #f8dce0, #e6efd8);
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 4px solid #e98b9b;
+}
+
+header h1 {
+    color: #a9576a;
+    margin: 0 0 15px;
+    font-size: 30px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #526344;
+    background-color: #fff7f0;
+    padding: 10px 20px;
+    border: 2px solid #a8bd83;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e98b9b;
+    color: white;
+    border-color: #e98b9b;
+}
+
+/* ===== GARIS PEMISAH ===== */
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d8e3c5;
+    margin: 0;
+}
+
+/* ===== KONTEN UTAMA ===== */
+
+main {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e6efd8;
+    box-shadow: 0 5px 15px rgba(82, 99, 68, 0.10);
+}
+
+section h2 {
+    color: #a9576a;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* ===== FORMULIR ===== */
+
+form p {
+    margin-bottom: 22px;
+}
+
+label {
+    display: inline-block;
+    color: #526344;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #4b5142;
+    background-color: #fffaf7;
+    border: 1px solid #cbd8b5;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e98b9b;
+    box-shadow: 0 0 0 3px rgba(233, 139, 155, 0.18);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* ===== TOMBOL ===== */
+
+button {
+    padding: 11px 20px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #e98b9b;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #cf7184;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background-color: #e6efd8;
+    color: #526344;
+}
+
+button[type="reset"]:hover {
+    background-color: #cbd8b5;
+    transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 0;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #526344;
+    color: #fff7f0;
+    border-top: 4px solid #e98b9b;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE UNTUK HP ===== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 20px 16px;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
+}
