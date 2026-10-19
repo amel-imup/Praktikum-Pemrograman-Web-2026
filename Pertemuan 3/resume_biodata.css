@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -6,23 +5,23 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif
-    background-color: #fff7f0;
-    color: #4b5142;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F8F1F3;
+    color: #343D35;
     line-height: 1.7;
 }
 
 /* ===== HEADER ===== */
 
 header {
-    background: linear-gradient(135deg, #f8dce0, #e6efd8);
+    background: linear-gradient(135deg, #fe42cf);
     text-align: center;
     padding: 35px 20px;
-    border-bottom: 4px solid #e98b9b;
+    border-bottom: 4px solid #8F3D5A;
 }
 
 header h1 {
-    color: #a9576a;
+    color: #234631;
     margin: 0 0 15px;
     font-size: 30px;
 }
@@ -30,19 +29,19 @@ header h1 {
 nav a {
     display: inline-block;
     text-decoration: none;
-    color: #526344;
-    background-color: #fff7f0;
+    color: #234631;
+    background-color: #FFF9FA;
     padding: 10px 20px;
-    border: 2px solid #a8bd83;
+    border: 2px solid #386348;
     border-radius: 25px;
     font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #e98b9b;
+    background-color: #8F3D5A;
     color: white;
-    border-color: #e98b9b;
+    border-color: #8F3D5A;
 }
 
 /* ===== GARIS PEMISAH ===== */
@@ -50,7 +49,7 @@ nav a:hover {
 hr {
     border: none;
     height: 2px;
-    background-color: #d8e3c5;
+    background-color: #C8D8C9;
     margin: 0;
 }
 
@@ -63,15 +62,15 @@ main {
 }
 
 section {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 18px;
-    border: 1px solid #e6efd8;
-    box-shadow: 0 5px 15px rgba(82, 99, 68, 0.10);
+    border: 1px solid #D8E5D9;
+    box-shadow: 0 5px 15px rgba(35, 70, 49, 0.10);
 }
 
 section h2 {
-    color: #a9576a;
+    color: #8F3D5A;
     text-align: center;
     margin-top: 0;
     margin-bottom: 25px;
@@ -85,7 +84,7 @@ form p {
 
 label {
     display: inline-block;
-    color: #526344;
+    color: #234631;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -97,9 +96,9 @@ textarea {
     padding: 12px 14px;
     font-family: inherit;
     font-size: 15px;
-    color: #4b5142;
-    background-color: #fffaf7;
-    border: 1px solid #cbd8b5;
+    color: #343D35;
+    background-color: #FFF9FA;
+    border: 1px solid #B8CDBA;
     border-radius: 10px;
     outline: none;
     transition: 0.3s;
@@ -108,9 +107,9 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #e98b9b;
-    box-shadow: 0 0 0 3px rgba(233, 139, 155, 0.18);
-    background-color: #ffffff;
+    border-color: #8F3D5A;
+    box-shadow: 0 0 0 3px rgba(143, 61, 90, 0.18);
+    background-color: #FFFFFF;
 }
 
 textarea {
@@ -134,22 +133,22 @@ button {
 }
 
 button[type="submit"] {
-    background-color: #e98b9b;
+    background-color: #8F3D5A;
     color: white;
 }
 
 button[type="submit"]:hover {
-    background-color: #cf7184;
+    background-color: #702B45;
     transform: translateY(-2px);
 }
 
 button[type="reset"] {
-    background-color: #e6efd8;
-    color: #526344;
+    background-color: #D9E5D9;
+    color: #234631;
 }
 
 button[type="reset"]:hover {
-    background-color: #cbd8b5;
+    background-color: #B8CDBA;
     transform: translateY(-2px);
 }
 
@@ -159,9 +158,9 @@ footer {
     margin-top: 0;
     padding: 25px 20px;
     text-align: center;
-    background-color: #526344;
-    color: #fff7f0;
-    border-top: 4px solid #e98b9b;
+    background-color: #234631;
+    color: #F8F1F3;
+    border-top: 4px solid #8F3D5A;
 }
 
 footer p {
