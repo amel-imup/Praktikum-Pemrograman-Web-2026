@@ -38,7 +38,7 @@ body {
 }
 
 .site-header > .header-content > p {
-    color: #fffb07;
+    color: #fcf804;
     font-size: 16px;
     margin-bottom: 22px;
 }
@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e2f026;
+    background-color: #788014;
     color: #24415C;
     border-color: #F2D875;
     transform: translateY(-2px);
@@ -177,7 +177,7 @@ h3 {
 }
 
 time {
-    color: #fffb00;
+    color: #7a790a;
     font-weight: bold;
 }
 
@@ -194,7 +194,7 @@ time {
 
 .hobby-list li {
     background-color: #FFF3BF;
-    color: #f7f30e;
+    color: #7e7c16;
     padding: 8px 15px;
     border: 1px solid #F2D875;
     border-radius: 20px;
