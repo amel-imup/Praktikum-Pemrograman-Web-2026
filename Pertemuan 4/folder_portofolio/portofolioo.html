@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ina Amelia Cantika</title>
+    <link rel="stylesheet" href="portofolioo.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Portofolio Ina Amelia Cantika</h1>
+            <p>Mahasiswa Teknik Informatika</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#informasi">Informasi Pribadi</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#hobi">Hobi</a></li>
+                    <li><a href="#manajemen-proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="tentang" class="panel">
+            <h2>Tentang Saya</h2>
+            <p>
+Halo, perkenalkan nama saya Ina Amelia Cantika. Saya adalah mahasiswa Teknik Informatika di Institut Teknologi Garut. Saya memiliki semangat untuk terus belajar dan mengembangkan kemampuan di bidang teknologi informasi, khususnya pemrograman dan pengembangan website. Saya senang mempelajari hal-hal baru, menambah pengalaman, serta meningkatkan keterampilan agar dapat menjadi pribadi yang lebih baik, kreatif, dan bertanggung jawab.
+            </p>
+        </section>
+
+        <section id="informasi" class="panel">
+            <h2>Informasi Pribadi</h2>
+            <p>Nama: Ina Amelia Cantika</p>
+            <p>Status: Mahasiswa</p>
+            <p>Program Studi: Teknik Informatika</p>
+            <p>Universitas: Institut Teknologi Garut</p>
+        </section>
+
+        <section id="pendidikan" class="panel">
+            <h2>Pendidikan</h2>
+            <article>
+                <h3>Institut Teknologi Garut</h3>
+                <p>Program Studi: Teknik Informatika</p>
+                <p>Tahun: <time datetime="2024">2024</time></p>
+            </article>
+        </section>
+
+        <section id="hobi" class="panel">
+            <h2>Hobi</h2>
+            <ul class="hobby-list">
+                <li>Mempelajari hal baru</li>
+                <li>Menggunakan teknologi</li>
+                <li>Mendengarkan musik</li>
+                <li>Fotografi dan editing</li>
+                <li>Berolahraga</li>
+            </ul>
+        </section>
+
+        <!-- APLIKASI MANAJEMEN PROYEK -->
+        <section id="manajemen-proyek" class="panel">
+            <h2>Manajemen Portofolio Proyek</h2>
+
+            <!-- Statistik -->
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span>Total Proyek</span>
+                    <p id="stat-total-projects">0</p>
+                </article>
+
+                <article class="stat-card">
+                    <span>Total Anggaran</span>
+                    <p id="stat-total-budget">Rp 0</p>
+                </article>
+
+                <article class="stat-card">
+                    <span>Proyek Selesai</span>
+                    <p id="stat-completed-projects">0</p>
+                </article>
+            </div>
+
+            <!-- Form input proyek -->
+            <div class="form-section">
+                <h3>Tambah Proyek Baru</h3>
+
+                <form id="project-form">
+                    <div class="form-group">
+                        <label for="project-title">Judul Proyek</label>
+                        <input
+                            type="text"
+                            id="project-title"
+                            placeholder="Contoh: Website Portofolio"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-category">Kategori</label>
+                        <select id="project-category" required>
+                            <option value="Web App">Web App</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Desktop App">Desktop App</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-budget">
+                            Estimasi Anggaran (Rp)
+                        </label>
+                        <input
+                            type="number"
+                            id="project-budget"
+                            placeholder="Contoh: 2500000"
+                            min="1"
+                            step="1"
+                            required
+                        >
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input
+                            type="checkbox"
+                            id="project-completed"
+                        >
+                        <label for="project-completed">
+                            Sudah Selesai
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Tambah Proyek
+                    </button>
+
+                    <p id="form-message" class="form-message"
+                       role="status" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <!-- Pencarian dan filter -->
+            <div class="search-section">
+                <h3>Daftar Proyek</h3>
+
+                <div class="search-controls">
+                    <div class="form-group search-input">
+                        <label for="search-project">Cari Proyek</label>
+                        <input
+                            type="search"
+                            id="search-project"
+                            placeholder="Ketik nama proyek..."
+                        >
+                    </div>
+
+                    <div class="form-group category-filter">
+                        <label for="filter-category">Filter Kategori</label>
+                        <select id="filter-category">
+                            <option value="Semua">Semua Kategori</option>
+                            <option value="Web App">Web App</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Desktop App">Desktop App</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p id="project-count" class="project-count"></p>
+
+                <!-- Kartu proyek dibuat melalui JavaScript -->
+                <div id="project-list" class="project-list"></div>
+            </div>
+        </section>
+
+        <section id="kontak" class="panel">
+            <h2>Kontak</h2>
+            <p>
+                Saya terbuka untuk belajar dan berkolaborasi
+                dengan orang lain.
+            </p>
+            <p>
+                Email:
+                <a href="mailto:2406122@itg.ac.id">
+                    2406122@itg.ac.id
+                </a>
+            </p>
+        </section>
+
+        <aside class="status-panel">
+            <h3>Status Pekerjaan</h3>
+            <p>
+                Saat ini saya berfokus pada pendidikan dan
+                belajar pemrograman serta pengembangan website.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Portofolio Mahasiswa - All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F4F8FC;
+    color: #34495E;
+    line-height: 1.8;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    background: linear-gradient(135deg, #67b3ff);
+    padding: 35px 20px 25px;
+    text-align: center;
+    border-bottom: 1px solid #D3E2F0;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.site-header h1 {
+    color: #24527A;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.site-header > .header-content > p {
+    color: #fffb07;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+
+nav {
+    max-width: 900px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    color: #286BA0;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 8px 17px;
+    border: 1px solid #C5DDF3;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e2f026;
+    color: #24415C;
+    border-color: #F2D875;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   GARIS
+========================= */
+
+hr {
+    display: none;
+}
+
+/* =========================
+   MAIN DAN SECTION
+========================= */
+
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.panel {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #DFEAF4;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(36, 82, 122, 0.07);
+    scroll-margin-top: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.panel:hover {
+    box-shadow: 0 8px 24px rgba(36, 82, 122, 0.14);
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+h2 {
+    color: #24527A;
+    font-size: 24px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F2D875;
+}
+
+h3 {
+    color: #326B9A;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    color: #526577;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   TENTANG SAYA
+========================= */
+
+#tentang p {
+    color: #526577;
+    text-align: justify;
+}
+
+/* =========================
+   INFORMASI PRIBADI
+========================= */
+
+#informasi p {
+    background-color: #EDF5FC;
+    border-left: 4px solid #6FA8DC;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#informasi p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   PENDIDIKAN
+========================= */
+
+#pendidikan article {
+    background-color: #EDF5FC;
+    padding: 20px;
+    border-left: 5px solid #6FA8DC;
+    border-radius: 10px;
+}
+
+#pendidikan article p {
+    color: #526577;
+}
+
+time {
+    color: #fffb00;
+    font-weight: bold;
+}
+
+/* =========================
+   HOBI
+========================= */
+
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.hobby-list li {
+    background-color: #FFF3BF;
+    color: #f7f30e;
+    padding: 8px 15px;
+    border: 1px solid #F2D875;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.hobby-list li:hover {
+    background-color: #6FA8DC;
+    color: #FFFFFF;
+    border-color: #6FA8DC;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   STATISTIK PROYEK
+========================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 20px 0 30px;
+}
+
+.stat-card {
+    background-color: #EDF5FC;
+    border: 1px solid #D3E2F0;
+    border-radius: 12px;
+    padding: 20px 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    background-color: #FFF9DF;
+    border-color: #F2D875;
+}
+
+.stat-card span {
+    display: block;
+    color: #526577;
+    font-size: 14px;
+}
+
+.stat-card p {
+    color: #24527A;
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* =========================
+   FORM INPUT PROYEK
+========================= */
+
+.form-section {
+    background-color: #F8FBFE;
+    border: 1px solid #DFEAF4;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.form-section h3,
+.search-section > h3 {
+    color: #24527A;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+    min-width: 0;
+}
+
+.form-group label,
+.checkbox-group label {
+    color: #34495E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 13px;
+    border: 1px solid #C5DDF3;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #34495E;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #6FA8DC;
+    box-shadow: 0 0 0 3px rgba(111, 168, 220, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.checkbox-group input {
+    width: 18px;
+    height: 18px;
+    accent-color: #6FA8DC;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+/* =========================
+   TOMBOL
+========================= */
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #6FA8DC;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #326B9A;
+}
+
+.btn-toggle {
+    background-color: #E4F0FC;
+    color: #24527A;
+    border: 1px solid #C5DDF3;
+}
+
+.btn-toggle:hover {
+    background-color: #C5DDF3;
+}
+
+.btn-delete {
+    background-color: #FFF0D9;
+    color: #805522;
+    border: 1px solid #F2D5A3;
+}
+
+.btn-delete:hover {
+    background-color: #FFE2B5;
+}
+
+/* =========================
+   PESAN VALIDASI FORM
+========================= */
+
+.form-message {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-message:empty {
+    display: none;
+}
+
+.form-message.success {
+    color: #247548;
+}
+
+.form-message.error {
+    color: #A33B36;
+}
+
+/* =========================
+   PENCARIAN DAN FILTER
+========================= */
+
+.search-section {
+    margin-top: 30px;
+}
+
+.search-controls {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.project-count {
+    color: #526577;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   KARTU PROYEK
+========================= */
+
+.project-list {
+    display: grid;
+    gap: 15px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #DFEAF4;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #B9D9F7;
+    box-shadow: 0 6px 18px rgba(36, 82, 122, 0.1);
+    transform: translateY(-2px);
+}
+
+.project-info {
+    min-width: 0;
+}
+
+.project-info h4 {
+    color: #24527A;
+    font-size: 17px;
+    margin: 9px 0 5px;
+    overflow-wrap: anywhere;
+}
+
+.project-category {
+    display: inline-block;
+    background-color: #E4F0FC;
+    color: #286BA0;
+    padding: 3px 10px;
+    border: 1px solid #D3E2F0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-budget {
+    color: #526577;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Status proyek */
+
+.badge {
+    display: inline-block;
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-success {
+    background-color: #E0F2E6;
+    color: #247548;
+}
+
+.badge-pending {
+    background-color: #FFF3BF;
+    color: #705719;
+}
+
+/* Tombol aksi kartu */
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+/* Proyek tidak ditemukan */
+
+.empty-message {
+    background-color: #EDF5FC;
+    color: #526577;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px dashed #B9D3EA;
+    border-radius: 10px;
+}
+
+/* =========================
+   STATUS PEKERJAAN
+========================= */
+
+.status-panel {
+    margin: 30px 0;
+    padding: 25px 30px;
+    background: linear-gradient(120deg, #E4F0FC, #FFF2B8);
+    border-left: 5px solid #F2C94C;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(36, 82, 122, 0.05);
+}
+
+.status-panel h3 {
+    color: #24527A;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.status-panel p {
+    color: #526577;
+}
+
+/* =========================
+   KONTAK
+========================= */
+
+#kontak p {
+    color: #526577;
+    margin-bottom: 10px;
+}
+
+#kontak a {
+    color: #286BA0;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: 0.3s;
+}
+
+#kontak a:hover {
+    color: #8A6D16;
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #24527A;
+    color: #F4F8FC;
+    font-size: 14px;
+    border-top: 4px solid #F2C94C;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* =========================
+   RESPONSIVE TABLET DAN HP
+========================= */
+
+@media (max-width: 700px) {
+    .site-header {
+        padding: 28px 15px 22px;
+    }
+
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .site-header > .header-content > p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        gap: 7px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .container {
+        margin: 22px auto;
+        padding: 0 14px;
+    }
+
+    .panel {
+        padding: 22px 18px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    #tentang p {
+        text-align: left;
+    }
+
+    .hobby-list {
+        gap: 8px;
+    }
+
+    .hobby-list li {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-controls {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-section {
+        padding: 18px;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-actions {
+        width: 100%;
+    }
+
+    .status-panel {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    footer {
+        margin-top: 25px;
+        padding: 20px 12px;
+    }
+}
+
+/* =========================
+   HP KECIL
+========================= */
+
+@media (max-width: 400px) {
+    .site-header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a {
+        min-width: 170px;
+    }
+
+    .panel {
+        padding: 18px 14px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .project-actions .btn {
+        width: 100%;
+    }
+}
