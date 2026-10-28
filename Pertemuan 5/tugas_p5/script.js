@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clearCompletedBtn = document.querySelector("#clearCompletedBtn");
 
 
-    // 2. Membaca data dari LocalStorage
+    // 2. Membaca data di LocalStorage
     const getTasks = () => {
         try {
             return JSON.parse(
