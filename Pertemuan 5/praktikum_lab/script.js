@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Jika valid, hilangkan pesan error
+        // Jika valid, hilangkan pesann error
         taskInput.classList.remove("error");
         inputError.style.display = "none";
         inputmax.style.display = "none";
